@@ -1,7 +1,7 @@
 [package]
 name = "perorustbot"
 version = "0.1.0"
-license = "GPL-3.0-only"
+license = "MIT"
 description = "My personal telegram bot in rust"
 homepage = "https://github.com/PeroSar/perorustbot"
 authors = ["termux-tools <ayushcriticalops@gmail.com>"]
