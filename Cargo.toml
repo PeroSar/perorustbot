@@ -1,6 +1,6 @@
 [package]
 name = "perorustbot"
-version = "0.1.0"
+version = "0.1.1"
 license = "MIT"
 description = "My personal telegram bot in rust"
 homepage = "https://github.com/PeroSar/perorustbot"

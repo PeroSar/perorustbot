@@ -5,7 +5,12 @@ use teloxide::requests::ResponseResult;
 
 pub async fn perocmd_udi(cx: UpdateWithCx<AutoSend<Bot>, Message>, term: String) -> ResponseResult<Message> {
     if term.is_empty() {
-        cx.reply_to("provide a <b>word</b> to get definition!").parse_mode(Html).await
+	let url = "http://api.urbandictionary.com/v0/random";
+	let response = get_url(url.to_string()).await;
+	let word = &response.clone().unwrap()["list"][0]["word"];
+	let defin = &response.clone().unwrap()["list"][0]["definition"];
+	cx.reply_to(format!("Random definition:
+<b>{}</b> : <i>{}</i>", word.to_string().trim_matches('"').to_string(), defin.to_string().trim_matches('"').to_string())).parse_mode(Html).await
     } else {
         let defin = get_def(&term).await;
         if defin.is_none() {
