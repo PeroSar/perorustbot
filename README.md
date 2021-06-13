@@ -1,7 +1,7 @@
 # perorustbot v0.1.0-dev
 <img src="https://img.shields.io/badge/Version-v0.1.0%20(dev)-blue.svg">
 <img src="https://img.shields.io/crates/v/perorustbot.svg">
-[![CI](https://github.com/PeroSar/perorustbot/actions/workflows/rust.yml/badge.svg?branch=dev)](https://github.com/PeroSar/perorustbot/actions/workflows/rust.yml)
+<img src="https://github.com/PeroSar/perorustbot/actions/workflows/rust.yml/badge.svg?branch=dev">
 My personal telegram bot in rust
 
 ## Setting up your environment
