@@ -34,7 +34,8 @@ $ rustup override set nightly
 ## Installation
  1. Build manually (recommended)
 ```bash
-$ # clone this repo
+$ git clone https://github.com/PeroSar/perorustbot
+$ cd perorustbot
 $ # edit src/plugins/sudo.rs and replace my telegram id with yours
 $ cargo run --release
 ```
@@ -47,6 +48,7 @@ $ perorustbot
 
 > list of commands
 + say
++ start
 + help (list of all commands)
 + ping
 + ipi (soon)
@@ -55,6 +57,7 @@ $ perorustbot
 + ani (anime info)
 + ctid (chat id, your id, replied users id)
 + udi (urban dict)
++ upload 
 
 ## This bot can be found at https://t.me/Pero_Rust_Bot
 
