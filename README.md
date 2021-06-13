@@ -4,6 +4,8 @@
 <img src="https://img.shields.io/crates/v/perorustbot.svg">
 <a href="https://github.com/PeroSar/perorustbot/actions">
 <img src="https://github.com/PeroSar/perorustbot/actions/workflows/rust.yml/badge.svg?branch=dev">
+
+## Description
 My personal telegram bot in rust
 
 ## Setting up your environment
