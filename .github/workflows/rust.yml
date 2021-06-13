@@ -8,7 +8,7 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
-  TELOXIDE_TOKEN: ${{ secrets.TELOXIDE_TOKEN }}
+  TELOXIDE_TOKEN: 1883261015:AAENFkAota3wTsqAe9vEFwRgq_Xffyzd64M
 
 jobs:
   build:
