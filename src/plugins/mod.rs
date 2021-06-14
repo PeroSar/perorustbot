@@ -4,12 +4,14 @@ mod say;
 mod sudo;
 mod ctid;
 mod urbandict;
+mod corona;
 
 use help::perocmd_help;
 use say::perocmd_say;
 use sudo::{ pero_sudocmd_sh, pero_sudocmd_upload };
 use ctid::perocmd_ctid;
 use urbandict::perocmd_udi;
+use corona::perocmd_cs;
 
 use teloxide::prelude::*;
 use teloxide::types::ParseMode::Html;
@@ -28,6 +30,7 @@ pub enum Command {
     Udi { term: String },
     #[command(prefix = "p.")]
     Upload { file: String },
+    Cs { ctry: String},
 }
 
 #[allow(unreachable_patterns)]
@@ -41,6 +44,7 @@ pub async fn answer(cx: UpdateWithCx<AutoSend<Bot>, Message>, command: Command) 
         Command::Ctid => perocmd_ctid(cx).await,
         Command::Udi { term } => perocmd_udi(cx, term).await,
         Command::Upload { file } => pero_sudocmd_upload(cx, file).await,
+        Command::Cs { ctry } => perocmd_cs(cx, ctry).await,
     };
 
     Ok(())
