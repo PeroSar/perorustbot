@@ -6,7 +6,6 @@ mod ctid;
 mod urbandict;
 mod corona;
 mod ipinfo;
-mod paste;
 
 use help::perocmd_help;
 use say::perocmd_say;
@@ -15,7 +14,6 @@ use ctid::perocmd_ctid;
 use urbandict::perocmd_udi;
 use corona::perocmd_cs;
 use ipinfo::perocmd_ipi;
-use paste::perocmd_paste;
 
 use teloxide::prelude::*;
 use teloxide::types::ParseMode::Html;
@@ -36,7 +34,6 @@ pub enum Command {
     Upload { file: String },
     Cs { ctry: String },
     Ipi { ip: String },
-    Paste { cntnt: String },
 }
 
 #[allow(unreachable_patterns)]
@@ -52,7 +49,6 @@ pub async fn answer(cx: UpdateWithCx<AutoSend<Bot>, Message>, command: Command) 
         Command::Upload { file } => pero_sudocmd_upload(cx, file).await,
         Command::Cs { ctry } => perocmd_cs(cx, ctry).await,
         Command::Ipi { ip } => perocmd_ipi(cx, ip).await,
-        Command::Paste { cntnt } => perocmd_paste(cx, cntnt).await,
     };
 
     Ok(())

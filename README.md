@@ -62,7 +62,6 @@ $ perorustbot
 + ctid (chat id, your id, replied users id)
 + udi (urban dict)
 + upload 
-+ paste
 
 ## This bot can be found at https://t.me/Pero_Rust_Bot
 
