@@ -1,5 +1,5 @@
-# perorustbot v0.1.0-dev
-<img src="https://img.shields.io/badge/Version-v0.1.0%20(dev)-blue.svg">
+# perorustbot v0.1.2-dev
+<img src="https://img.shields.io/badge/Version-v0.1.2%20(dev)-blue.svg">
 <a href="https://crates.io/crates/perorustbot">
 <img src="https://img.shields.io/crates/v/perorustbot.svg">
 <a href="https://github.com/PeroSar/perorustbot/actions">
