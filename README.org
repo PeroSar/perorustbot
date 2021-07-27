@@ -1,0 +1,68 @@
+#+TITLE: PeroRustBot
+#+DESCRIPTION: A telegram bot written in rust using teloxide
+#+LANGUAGE: en
+
+* Table of Contents
+:PROPERTIES:
+:TOC:      :include all :ignore this
+:END:
+:CONTENTS:
+- [[#about][About]]
+    - [[#support-chat][Support chat]]
+- [[#installation][Installation]]
+    - [[#setting-up-your-environment][Setting up your environment]]
+    - [[#build-manually][Build manually]]
+    - [[#from-cratesio][From crates.io]]
+- [[#commands-available-currently][Commands]]
+- [[#find-this-bot][Find this bot]]
+:END:
+
+[[https://img.shields.io/crates/v/perorustbot.svg]]
+[[https://github.com/PeroSar/perorustbot/actions/workflows/rust.yml/badge.svg?branch=dev]]
+
+
+* About
+=PeroRustBot= is a telegram bot written in rust using teloxide
+** Support chat
+Support chat for this bot can be found [[https://t.me/bots_rs][here]]
+
+* Installation
+
+** Setting up your environment
+    1. [[https://rustup.rs/][Download Rust]]
+    2. Create a new bot using [[https://t.me/BotFather][@Botfather]]
+    3. Initialise the =TELOXIDE_TOKEN= environmental variable to your token:
+#+BEGIN_SRC shell
+    $ export TELOXIDE_TOKEN=<Your token here>
+#+END_SRC
+
+** Build manually
+#+BEGIN_SRC shell
+$ git clone https://github.com/PeroSar/perorustbot
+$ cd perorustbot
+$ # edit src/plugins/sudo.rs and replace my telegram id with yours
+$ cargo run --release
+#+END_SRC
+** From crates.io
+#+BEGIN_SRC shell
+$ cargo install perorustbot
+$ perorustbot
+#+END_SRC
+
+* Commands available currently
++  =/start= - Redirect to =/help=
++ =/help= - List of all commands
++ =/ping= - Replies with "Pong!"
++ =/say [text]= - Bot replies with your text
++ =/ctid= - Get current chat's ID, your ID, replied users ID (if any)
++ =/ipi [ip]= - Get ip information from ipinfo.io
++ =/cs [country]= - Get corona stats
++ =/paste [reply to a message or text]= - Paste text
++ =/udi [term]= - Get definition of a term
+
+** Admin commands
++ =p.upload [file]= - Upload a file
++ =p.sh [command]= - Exexute a shell command
+
+* Find this bot
+You can find this bot [[https://t.me/Pero_Rust_Bot][here]]
