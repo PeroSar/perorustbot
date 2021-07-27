@@ -44,6 +44,7 @@ pub enum Command {
 pub async fn answer(cx: UpdateWithCx<AutoSend<Bot>, Message>, command: Command) -> ResponseResult<()> {
     match command {
         Command::Help => perocmd_help(cx).await,
+        Command::Start => cx.reply_to("Hello, type /help@Pero_Rust_Bot to see a list of my commands!").await,
         Command::Say { texx } => perocmd_say(cx, texx).await,
         Command::Ping => cx.reply_to("<i>Pong!</i>").parse_mode(Html).await,
         Command::Sh { cmnd } => pero_sudocmd_sh(cx, cmnd).await,
