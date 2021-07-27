@@ -37,6 +37,7 @@ pub enum Command {
     Cs { ctry: String },
     Ipi { ip: String },
     Paste { cntnt: String },
+    Start,
 }
 
 #[allow(unreachable_patterns)]
