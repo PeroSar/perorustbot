@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [ dev ]
+    paths:
+      - 'src/**'
   pull_request:
     branches: [ dev ]
 
