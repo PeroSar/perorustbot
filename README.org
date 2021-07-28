@@ -14,6 +14,7 @@
     - [[#build-manually][Build manually]]
     - [[#from-cratesio][From crates.io]]
 - [[#commands-available-currently][Commands]]
+    - [[#sudo-commands][Sudo commands]]
 - [[#find-this-bot][Find this bot]]
 :END:
 
@@ -60,7 +61,7 @@ $ perorustbot
 + =/paste [reply to a message or text]= - Paste text
 + =/udi [term]= - Get definition of a term
 
-** Admin commands
+** Sudo commands
 + =p.upload [file]= - Upload a file
 + =p.sh [command]= - Exexute a shell command
 
