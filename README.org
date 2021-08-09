@@ -63,7 +63,7 @@ $ perorustbot
 
 ** Sudo commands
 + =p.upload [file]= - Upload a file
-+ =p.sh [command]= - Exexute a shell command
++ =p.sh [command]= - Execute a shell command
 
 * Find this bot
 You can find this bot [[https://t.me/Pero_Rust_Bot][here]]

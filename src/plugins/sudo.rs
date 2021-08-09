@@ -31,8 +31,7 @@ pub async fn pero_sudocmd_upload(cx: UpdateWithCx<AutoSend<Bot>, Message>, fname
 
 
 fn is_sudo(cx: &UpdateWithCx<AutoSend<Bot>, Message>) -> bool {
-    let sudousrs = vec![1502313477]; // will add more users later
-    if sudousrs.contains(&cx.update.from().unwrap().id) {
+    if cx.update.from().unwrap().id  ==  1502313477 { // Replace user id here!
         return true;
     } else {
         return false;
