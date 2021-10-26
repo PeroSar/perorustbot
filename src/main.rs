@@ -14,6 +14,5 @@ async fn run() {
 
     let bot = Bot::from_env().auto_send();
 
-    teloxide::commands_repl(bot, "Pero_Rust_Bot", answer)
-        .await
+    teloxide::commands_repl(bot, "Pero_Rust_Bot", answer).await
 }
