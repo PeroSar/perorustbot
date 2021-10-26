@@ -18,5 +18,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - uses: actions-rs/toolchain@v1
+      with:
+        toolchain: 1.56.0
+        override: true
+        components: rustfmt, clippy
+
+    - name: rustfmt
+      run: cargo fmt -- --check
+
     - name: Build
       run: cargo build --verbose --release
