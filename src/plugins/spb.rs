@@ -8,7 +8,7 @@ pub async fn perocmd_spb(
     cx: UpdateWithCx<AutoSend<Bot>, Message>,
     usr: String,
 ) -> ResponseResult<Message> {
-    let user = info::full(usr).await;
+    let user = info::full(usr);
     cx.reply_to(format!(
         "<b>SPB Info</b>
 
