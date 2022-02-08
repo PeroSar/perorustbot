@@ -16,6 +16,5 @@ Here's a list of my commands:
 <code>/ani [anime name]</code> - <i>search a anime.</i>
 <code>/cs [country]</code> - <i>Corona stats for a country.</i>
 <code>/udi [term]</code> - <i>get definition of a word from urbandictionary.</i>
-<code>/paste [reply or text]</code> - <i>Paste text.</i>
 <code>/ipi [IP]</code> - <i>get ip address info.</i>", cx.update.from().unwrap().first_name)).parse_mode(Html).disable_web_page_preview(true).await
 }

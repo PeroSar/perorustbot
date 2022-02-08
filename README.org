@@ -58,7 +58,6 @@ $ perorustbot
 + =/ctid= - Get current chat's ID, your ID, replied users ID (if any)
 + =/ipi [ip]= - Get ip information from ipinfo.io
 + =/cs [country]= - Get corona stats
-+ =/paste [reply to a message or text]= - Paste text
 + =/udi [term]= - Get definition of a term
 
 ** Sudo commands
