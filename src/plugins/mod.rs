@@ -2,6 +2,7 @@ mod corona;
 mod ctid;
 mod help;
 mod ipinfo;
+mod paste;
 mod req;
 mod say;
 mod spb;
@@ -12,6 +13,7 @@ use corona::perocmd_cs;
 use ctid::perocmd_ctid;
 use help::perocmd_help;
 use ipinfo::perocmd_ipi;
+use paste::perocmd_paste;
 use say::perocmd_say;
 use spb::perocmd_spb;
 use sudo::{pero_sudocmd_sh, pero_sudocmd_upload};
@@ -51,6 +53,9 @@ pub enum Command {
     Spb {
         usr: String,
     },
+    Paste {
+        ext: String,
+    },
     Start,
 }
 
@@ -75,6 +80,7 @@ pub async fn answer(
         Command::Cs { ctry } => perocmd_cs(cx, ctry).await,
         Command::Ipi { ip } => perocmd_ipi(cx, ip).await,
         Command::Spb { usr } => perocmd_spb(cx, usr).await,
+        Command::Paste { ext } => perocmd_paste(cx, ext).await,
     };
 
     Ok(())
