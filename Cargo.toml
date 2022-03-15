@@ -12,7 +12,7 @@ teloxide = { version = "0.5.0", features = ["auto-send", "macros"] }
 log = "0.4.8"
 pretty_env_logger = "0.4.0"
 tokio = { version =  "1.16", features = ["rt-multi-thread", "macros"] }
-reqwest = { version = "0.11.9", features = ["json"] }
+reqwest = { version = "0.11.10", features = ["json"] }
 serde_json = "1.0.78"
 spamprotection = "0.1.0-2"
 librustbin = "0.1.0"
