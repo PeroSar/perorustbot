@@ -59,6 +59,7 @@ $ perorustbot
 + =/ipi [ip]= - Get ip information from ipinfo.io
 + =/cs [country]= - Get corona stats
 + =/udi [term]= - Get definition of a term
++ =/paste= - Paste text in reply to rustbin
 
 ** Sudo commands
 + =p.upload [file]= - Upload a file
