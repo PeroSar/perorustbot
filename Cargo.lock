@@ -845,7 +845,6 @@ dependencies = [
  "pretty_env_logger",
  "reqwest",
  "serde_json",
- "spamprotection",
  "teloxide",
  "tokio",
 ]
@@ -1178,16 +1177,6 @@ checksum = "66d72b759436ae32898a2af0a14218dbf55efde3feeb170eb623637db85ee1e0"
 dependencies = [
  "libc",
  "winapi",
-]
-
-[[package]]
-name = "spamprotection"
-version = "0.1.0-2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1b5d5a819e943409b0642e46df63cca2d0a70f36f45d06df72b19ef9b47a77bf"
-dependencies = [
- "reqwest",
- "serde",
 ]
 
 [[package]]
