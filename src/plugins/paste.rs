@@ -1,4 +1,5 @@
 use librustbin::Client;
+use reqwest::Url;
 use teloxide::prelude::*;
 use teloxide::requests::ResponseResult;
 use teloxide::types::ParseMode::Html;
@@ -28,7 +29,7 @@ pub async fn perocmd_paste(
             .reply_markup(ReplyMarkup::InlineKeyboard(InlineKeyboardMarkup::new(
                 vec![vec![InlineKeyboardButton::new(
                     "Paste URL",
-                    InlineKeyboardButtonKind::Url(url.into()),
+                    InlineKeyboardButtonKind::Url(Url::parse(&url).unwrap()),
                 )]],
             )))
             .parse_mode(Html)

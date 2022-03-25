@@ -40,7 +40,7 @@ pub async fn pero_sudocmd_upload(
 ) -> ResponseResult<Message> {
     if is_sudo(&cx) {
         if Path::new(&fname).exists() {
-            let file = InputFile::File(PathBuf::from(fname));
+            let file = InputFile::file(PathBuf::from(fname));
             cx.requester.send_document(cx.update.chat_id(), file).await
         } else {
             cx.reply_to("That file doesn't exist!").await
