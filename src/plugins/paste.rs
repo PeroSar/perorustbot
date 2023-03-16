@@ -18,7 +18,7 @@ pub async fn perocmd_paste(
 
         let url = format!(
             "{}{}",
-            Client::new()
+            Client::new("https://bin.perosar.eu.org".to_string())
                 .paste_highlight(reply.text().unwrap().to_string())
                 .unwrap()
                 .trim(),
