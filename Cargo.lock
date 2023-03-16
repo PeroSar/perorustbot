@@ -614,9 +614,9 @@ checksum = "efaa7b300f3b5fe8eb6bf21ce3895e1751d9665086af2d64b42f19701015ff4f"
 
 [[package]]
 name = "librustbin"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c2e4ced5750ba18b98231f69a2f08408a7a459dcf9833c0cdbcf6417b04e06f"
+checksum = "95c8af3fd018d9c288a54bc3d8c5a0a33e9e0f6395cc092c5fceb7ce1069c10c"
 dependencies = [
  "reqwest",
 ]
