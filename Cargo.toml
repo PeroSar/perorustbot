@@ -1,0 +1,11 @@
+[package]
+name = "perorustbot"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+grammers-client = { git = "https://github.com/Lonami/grammers", version = "0.4.0" }
+grammers-session = { git = "https://github.com/Lonami/grammers", version = "0.4.1" }
+log = "0.4.17"
+simple_logger = "4.1.0"
+tokio = { version = "1.27.0", features = ["full"] }
